@@ -1,0 +1,87 @@
+@import "reset";
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto&display=swap');
+
+$primary-color: #2d5950;
+$primary-color-light: #789690;
+$secondary-color: #efe3d5;
+$accent-color: #4e2438;
+
+.App{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $secondary-color;
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        border-bottom: 5px solid $accent-color ;
+        h1{
+            color: $primary-color;
+            font-size: 40px;
+            font-family: 'Abril Fatface', cursive;
+        }
+        button{
+            background-color: inherit;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            &:hover {
+                color: $accent-color;
+                text-decoration: underline;
+                font-weight: bold;
+              }
+        }
+    }
+    main{
+        .scroll{
+            background-image: url('https://images.unsplash.com/photo-1512163143273-bde0e3cc7407?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80');
+            min-height: 40rem;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            h2{
+                color: $secondary-color;
+                font-family: 'Roboto', sans-serif;
+                font-size: 30px;
+                padding-top: 10rem;
+                padding-left: 5rem;
+            }
+            h3{
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+                color: $secondary-color;
+                padding-left: 5rem;
+            }
+        }
+        .card-container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2rem 1rem;
+            .card{
+                height: 20rem;
+                width: 20rem;
+                background-color: $accent-color;
+                margin: 1rem;
+            }
+        }
+        min-height: 40rem;
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: $primary-color-light;
+        color: $primary-color;
+        i{
+            padding: 0 .5rem;
+            color: $secondary-color;
+        }
+    }
+}
